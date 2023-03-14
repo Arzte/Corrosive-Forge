@@ -311,6 +311,7 @@ pub struct Row {
     pub is_requirement_open: bool,
     pub is_result_row: bool,
     pub object_width: String,
+    #[serde(skip)]
     pub objects: Vec<Object>,
     pub requireds: Vec<Required>,
     pub result_group_id: String,
